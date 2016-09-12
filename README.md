@@ -1,7 +1,5 @@
 # Docker Cheat Sheet
 
-**Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
-
 ## Table of Contents
 
 * [Why](#why)
@@ -342,6 +340,7 @@ Docker volumes are [free-floating filesystems](https://docs.docker.com/userguide
 
 * [`docker volume ls`](https://docs.docker.com/engine/reference/commandline/volume_ls/)
 * [`docker volume inspect`](https://docs.docker.com/engine/reference/commandline/volume_inspect/)
+* `docker volume ls -f dangling=true` to list volumes not attached to any container
 
 Volumes are useful in situations where you can't use links (which are TCP/IP only).  For instance, if you need to have two docker instances communicate by leaving stuff on the filesystem.
 
